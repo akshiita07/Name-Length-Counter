@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejs1</title>
+</head>
+
+<body>
+    
+    <% if(locals.countLetters){ %>
+        <h1>There are <%= countLetters %> letters in your name</h1>
+    <% } else{%>
+        <h1>Enter your name here</h1>
+    <% } %>            
+    
+    <form action="/submit" method="post">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="lname" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+
+</html>
